@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Responsive Website CS355</title>
+	<link rel="stylesheet" href="menu.css">
+	<div id = "wrapper">
+			<ul class="nav-list">
+				<li class="btn"><a id = "home" href="index.html"> Home </a></li>
+				<li class="btn"> <u>Course Menu </u>
+						<ul id = "dropdown">
+							<li><a href="https://learn.zybooks.com/zybook/CUNYCSCI355TeitelmanFall2019" target="_blank">ZyBook</a></li>
+							<li><a href="https://app.tophat.com/e/648883/lecture" target="_blank">TopHat</a></li>
+							<li><a href="https://tinyurl.com/CSCI355-Fall2019" target="_blank">Course Google Drive</a></li>
+							<li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+						</ul>
+				</li>
+				
+				<li class="btn"> <u>About </u>
+					<ul id = "dropdown">
+							<li><a href="dev.html">Developers </a></li>
+							<li><a href="#footer"> Contact us </a></li>
+					</ul>
+				</li>
+				
+				<li class="btn"> <u>Browser Menu</u>
+					<ul id = "dropdown">
+							<li> <a href="nav.html">Navigator</a> </li>
+							<li><a href="window.html"> Window </a></li>
+							<li><a href="screen.html">Screen </a></li>
+							<li> <a href="location.html">Location </a></li>
+							<li> <a href="geo.html">Geolocation </a></li>
+					</ul>
+				</li>
+				<li><input type="text" placeholder="Search.."></li>
+			  </ul>
+			  
+		</div>
+</head>
+<body>
+    <br>
+    <p id="nav"></p>
+    <p id="window"></p>
+    <p id="screen"></p>
+    <p id="loc"></p>
+    <p id="geo"></p>
+    <br>
+<script> 
+document.getElementById("screen").innerHTML=("<h2>SCREEN:</h2>" + "<br\>Screen Height: "+screen.height
++ "<br/>Screen Width:       "+screen.width
++ "<br/>Available Screen height:    "+screen.availHeight
++ "<br/>Available Screen width: "+screen.availWidth
++ "<br/>Screen Color depth:       "+screen.colorDepth
++ "<br/>Screen Pixel depth:      "+screen.pixelDepth);  
+</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="menu.js"></script>
+</body>
+</html>
